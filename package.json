@@ -1,0 +1,11 @@
+{
+    "scripts": {
+        "build": "pnpm run --filter @hedger/vue-plotly build",
+        "dev": "pnpm run --filter ./playground dev"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@hedger/prettier-config": "^1.1.0",
+        "prettier": "^2.7.1"
+    }
+}
