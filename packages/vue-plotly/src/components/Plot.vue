@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import Plotly from 'plotly.js-dist';
-    import { onMounted, onUnmounted, ref, unref, watchEffect, WatchStopHandle } from 'vue';
+    import { onMounted, onBeforeUnmount, ref, unref, watchEffect, WatchStopHandle } from 'vue';
 
     let stopWatcher: WatchStopHandle;
     let resizeObserver: ResizeObserver;
