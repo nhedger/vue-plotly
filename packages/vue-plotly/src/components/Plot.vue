@@ -52,7 +52,7 @@
         resizeObserver.observe(unref(plotDiv) as HTMLElement);
     });
 
-    onUnmounted(() => {
+    onBeforeUnmount(() => {
         // Stop watching for props changes
         stopWatcher();
 
@@ -60,7 +60,7 @@
         resizeObserver.unobserve(unref(plotDiv) as HTMLElement);
 
         // Purge Plotly
-        Plotly.purge(unref(plotDiv) as HTMLElement);
+        Plotly.purge(unref(plotDiv) as HTMLElement); 
     });
 </script>
 
